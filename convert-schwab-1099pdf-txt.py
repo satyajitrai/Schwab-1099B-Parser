@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """Convert Schwab EAC 1099 PDF to TurboTax TXF and CSV format. No need to copy-paste."""
 
 # TXF spec: http://turbotax.intuit.com/txf/TXF042.jsp
@@ -147,7 +147,7 @@ while True:
 
   csv_writer.writerow([symbol, quantity, acq_date, sale_date, basis, proceeds, 'W' if wash!='' else '', wash])
 
-print "Verify these totals with the summary of the last page of the Schwab Statement"
-print "Total Proceeds: $%.2f" % total_proceeds
-print "Total Basis: $%.2f" % total_basis
-print "Total Wash: $%.2f" % total_wash
+print(f"Verify these totals with the summary of the last page of the Schwab Statement")
+print(f"Total Proceeds: {total_proceeds:%.2f}")
+print(f"Total Basis: {total_basis:%.2f}")
+print(f"Total Wash: {total_wash:%.2f}")
