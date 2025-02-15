@@ -148,6 +148,6 @@ while True:
   csv_writer.writerow([symbol, quantity, acq_date, sale_date, basis, proceeds, 'W' if wash!='' else '', wash])
 
 print(f"Verify these totals with the summary of the last page of the Schwab Statement")
-print(f"Total Proceeds: {total_proceeds:%.2f}")
-print(f"Total Basis: {total_basis:%.2f}")
-print(f"Total Wash: {total_wash:%.2f}")
+print(f"Total Proceeds: {total_proceeds:.2f}")
+print(f"Total Basis: {total_basis:.2f}")
+print(f"Total Wash: {total_wash:.2f}")
